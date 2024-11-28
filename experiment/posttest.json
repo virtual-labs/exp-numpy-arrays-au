@@ -2,37 +2,88 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "What is NumPy primarily used for?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Web development",
+        "b": "Handling numerical data and scientific computing",
+        "c": "Creating animations",
+        "d": "Database management"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "NumPy is not a tool for web development.",
+        "b": "Correct! NumPy is used for numerical computations and handling large datasets efficiently.",
+        "c": "While animations can use numerical data, NumPy is not primarily for this purpose.",
+        "d": "NumPy does not manage databases; it focuses on data computations."
       },
-      "correctAnswer": "a",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "How do you create a NumPy array?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "array([1, 2, 3])",
+        "b": "np.array([1, 2, 3])",
+        "c": "NumPy.array(1, 2, 3)",
+        "d": "numpy.create([1, 2, 3])"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "This is incorrect as the `np` prefix is missing.",
+        "b": "Correct! The `np.array()` function is the standard way to create a NumPy array.",
+        "c": "This syntax is incorrect for creating a NumPy array.",
+        "d": "NumPy does not have a `create` method for arrays."
       },
-      "correctAnswer": "c",
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which operation is used to compute the mean of elements in a NumPy array?",
+      "answers": {
+        "a": "np.sum()",
+        "b": "np.mean()",
+        "c": "np.median()",
+        "d": "np.average()"
+      },
+      "explanations": {
+        "a": "Sum computes the total, not the mean.",
+        "b": "Correct! `np.mean()` calculates the mean of array elements.",
+        "c": "Median is not the same as the mean; it identifies the middle value.",
+        "d": "While `np.average()` can compute the mean, `np.mean()` is more common."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What does the slicing syntax `arr[1:3]` do in NumPy?",
+      "answers": {
+        "a": "Selects elements 1 and 3.",
+        "b": "Selects elements at indices 1 and 2.",
+        "c": "Selects all elements except at indices 1 and 3.",
+        "d": "Selects elements from index 0 to 3."
+      },
+      "explanations": {
+        "a": "This is incorrect because slicing does not select non-contiguous indices.",
+        "b": "Correct! `arr[1:3]` selects elements at indices 1 and 2.",
+        "c": "Slicing does not exclude specific indices but selects a range.",
+        "d": "This is incorrect as slicing starts at 1 and ends before 3."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What function is used to reshape a NumPy array?",
+      "answers": {
+        "a": "np.resize()",
+        "b": "np.reshape()",
+        "c": "np.modify()",
+        "d": "np.form()"
+      },
+      "explanations": {
+        "a": "While `np.resize()` can change array size, `np.reshape()` is specifically for reshaping.",
+        "b": "Correct! `np.reshape()` changes the dimensions of an array.",
+        "c": "NumPy does not have a `modify()` function.",
+        "d": "This is not a valid NumPy function."
+      },
+      "correctAnswer": "b",
       "difficulty": "beginner"
     }
   ]

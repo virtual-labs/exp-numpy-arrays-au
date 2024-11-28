@@ -2,37 +2,71 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "What is NumPy?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "A Python library for web development",
+        "b": "A Python library for scientific computing and numerical data manipulation",
+        "c": "A type of database management system",
+        "d": "A graphical user interface toolkit"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "NumPy is not for web development.",
+        "b": "Correct! NumPy is primarily used for numerical computations and handling arrays.",
+        "c": "NumPy is not related to databases.",
+        "d": "NumPy does not deal with graphical interfaces."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which of the following is used to import NumPy?",
+      "answers": {
+        "a": "import numpy as np",
+        "b": "import numpy",
+        "c": "import np",
+        "d": "import scipy as np"
+      },
+      "explanations": {
+        "a": "Correct! `import numpy as np` is the standard way to import NumPy.",
+        "b": "This is incorrect; it's missing the alias.",
+        "c": "This is incorrect. `np` is an alias, not a separate package.",
+        "d": "This imports SciPy, not NumPy."
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "How do you create a NumPy array from a list?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "np.array([1, 2, 3])",
+        "b": "numpy([1, 2, 3])",
+        "c": "array([1, 2, 3])",
+        "d": "np.create([1, 2, 3])"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Correct! `np.array([1, 2, 3])` is the correct syntax for creating a NumPy array.",
+        "b": "This is incorrect. You need to use `np.array()`.",
+        "c": "This is incorrect, as `array()` is not a NumPy function on its own.",
+        "d": "There is no `np.create()` method in NumPy."
       },
-      "correctAnswer": "c",
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which of the following is used to find the number of elements in a NumPy array?",
+      "answers": {
+        "a": "np.size()",
+        "b": "np.count()",
+        "c": "np.length()",
+        "d": "np.num_elements()"
+      },
+      "explanations": {
+        "a": "Correct! `np.size()` is used to find the number of elements in an array.",
+        "b": "NumPy doesn't have a `count()` function for this purpose.",
+        "c": "There is no `length()` function in NumPy for arrays.",
+        "d": "There is no `np.num_elements()` function."
+      },
+      "correctAnswer": "a",
       "difficulty": "beginner"
     }
   ]

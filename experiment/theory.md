@@ -1,26 +1,102 @@
-<h2>Theory</h2>
-<u><h4>NumPy vs List:</h4></u>
-<p><b>NumPy:</b> Optimized for numerical operations, uses contiguous memory, and supports multi-dimensional arrays. It’s faster and more memory-efficient than Python lists.</p>
 
-<p><b>Python List:</b> Flexible and general-purpose, but slower for numerical tasks and lacks built-in support for advanced operations.</p>
 
-<b>NumPy Array Creation:</b>
+#### **Introduction to NumPy**
 
-<li>np.array(): Create an array from a list.</li>
-<b>Iteration in NumPy:</b>
-<li>Basic iteration: Loop through array elements, but NumPy allows faster vectorized operations without loops.</li>
-<li>np.nditer(): Efficiently iterate over multi-dimensional arrays.</li>
+**NumPy (Numerical Python)** is a powerful Python library designed for efficient numerical computation. It provides support for **multi-dimensional arrays**, **mathematical operations**, and **vectorized computations**, making it much faster and more memory-efficient than Python’s built-in lists. NumPy is widely used in data science, machine learning, scientific computing, and data analysis.
 
-<b>Slicing in NumPy</b>
-<p>Slicing in NumPy is a technique used to access a subset of elements from an array. It follows the syntax array[start:stop:step], and can be applied to both 1D and 2D arrays.</p>
-<p>1D Array Slicing
-In a 1D array, slicing allows you to extract a range of elements based on their indices.
 
-Basic Slicing: You can specify the start and stop indices.</p>
-<p>2D Array Slicing
-Slicing in 2D arrays works similarly, but you must specify slicing for both rows and columns.</p>
-<p>
-<li>Start Index: Specifies where the slice starts (inclusive).</li>
-<li>Stop Index: Specifies where the slice ends (exclusive)</li>.
-<li>Step: Defines the interval between elements.</li>
-<li>Negative Indexing: Allows you to count from the end of the array (e.g., -1 is the last element)</li></p>
+
+#### **NumPy vs Python List**
+
+##### **NumPy**
+
+* Optimized for numerical and scientific operations
+* Stores elements in **contiguous memory**, improving speed
+* Supports **multi-dimensional arrays (ndarrays)**
+* Enables **vectorized operations**, which eliminate the need for explicit loops
+
+##### **Python List**
+
+* General-purpose and flexible
+* Slower for numerical tasks
+* Does not support mathematical operations directly
+* Not memory-efficient for large-scale computations
+
+
+
+#### **NumPy Array Creation**
+
+##### **`np.array()`**
+
+Creates a NumPy array from a Python list or nested list.
+
+```python
+import numpy as np
+arr = np.array([1, 2, 3])
+```
+
+
+
+#### **Iteration in NumPy**
+
+##### **Basic Iteration**
+
+You can loop through array elements, but NumPy is optimized for **vectorized operations**, which are faster and preferred over loops.
+
+##### **`np.nditer()`**
+
+Used to iterate efficiently over multi-dimensional arrays.
+
+```python
+for x in np.nditer(arr):
+    print(x)
+```
+
+
+
+#### **Slicing in NumPy**
+
+Slicing allows you to extract a subset of elements from a NumPy array.
+The general syntax is:
+
+```
+array[start : stop : step]
+```
+
+##### **1D Array Slicing**
+
+Used to retrieve a range of elements:
+
+* **Start** → beginning index (inclusive)
+* **Stop** → ending index (exclusive)
+* **Step** → interval between elements
+
+Example:
+
+```python
+arr[1:4]   # elements at index 1, 2, 3
+```
+
+
+
+##### **2D Array Slicing**
+
+In 2D arrays, you specify slices for both **rows** and **columns**:
+
+```
+array[row_start:row_end , col_start:col_end]
+```
+
+Example:
+
+```python
+arr[1:3, 0:2]   # rows 1–2, columns 0–1
+```
+
+##### **Negative Indexing**
+
+You can also slice using negative indexes (e.g., `-1` refers to the last element).
+
+
+
+

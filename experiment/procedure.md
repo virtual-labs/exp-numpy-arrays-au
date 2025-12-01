@@ -1,4 +1,4 @@
-### Procedure
+
 <p>The interface consists of three sections: the left section features a main button for selecting topics, the center section displays the concept, and the right section includes a code editor where you can run the code.</p>
 <div><img src="./images/step1.png" alt="detailed step"></div>
 <p>Click the "Creation" button to begin learning NumPy.</p>

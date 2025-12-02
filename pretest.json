@@ -1,0 +1,107 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "What is NumPy primarily used for?",
+      "answers": {
+        "a": "Creating graphical user interfaces",
+        "b": "Efficient numerical computation using arrays",
+        "c": "Managing databases",
+        "d": "Web development"
+      },
+      "explanations": {
+        "a": "NumPy is not used for GUI development.",
+        "b": "Correct! NumPy is designed for fast numerical computation and array operations.",
+        "c": "NumPy has no role in database management.",
+        "d": "NumPy is not related to web development."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which of the following are advantages of NumPy over Python lists?",
+      "answers": {
+        "a": "NumPy is slower but easier to use",
+        "b": "NumPy supports vectorized operations and contiguous memory storage",
+        "c": "NumPy lists can store mixed data types",
+        "d": "NumPy automatically connects to databases"
+      },
+      "explanations": {
+        "a": "NumPy is much faster, not slower.",
+        "b": "Correct! NumPy is fast due to vectorization and contiguous memory.",
+        "c": "Python lists allow mixed types, not NumPy arrays.",
+        "d": "NumPy does not deal with databases."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which function is used to create a NumPy array from a Python list?",
+      "answers": {
+        "a": "np.create()",
+        "b": "np.array()",
+        "c": "array.numpy()",
+        "d": "np.list()"
+      },
+      "explanations": {
+        "a": "There is no function named create() in NumPy.",
+        "b": "Correct! np.array() converts a list into a NumPy array.",
+        "c": "This is not a valid NumPy function.",
+        "d": "NumPy does not have a list() function."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which NumPy tool allows efficient iteration over multi-dimensional arrays?",
+      "answers": {
+        "a": "np.loop()",
+        "b": "np.iterator()",
+        "c": "np.nditer()",
+        "d": "np.multi_iter()"
+      },
+      "explanations": {
+        "a": "No such function exists in NumPy.",
+        "b": "This is not a valid NumPy function.",
+        "c": "Correct! np.nditer() is used for efficient multi-dimensional iteration.",
+        "d": "np.multi_iter() does not exist."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What does slicing in NumPy allow you to do?",
+      "answers": {
+        "a": "Delete elements permanently",
+        "b": "Extract a subset of elements from an array",
+        "c": "Convert arrays to lists",
+        "d": "Create new data types"
+      },
+      "explanations": {
+        "a": "Slicing does not delete elements.",
+        "b": "Correct! Slicing retrieves specific parts of an array.",
+        "c": "Conversion is done using arr.tolist(), not slicing.",
+        "d": "Slicing has nothing to do with data types."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "In 2D array slicing, what does the syntax array[1:3, 0:2] mean?",
+      "answers": {
+        "a": "Select all rows and only columns 1–3",
+        "b": "Select rows 1 to 2 and columns 0 to 1",
+        "c": "Select rows 0 to 1 and all columns",
+        "d": "Select only the last row"
+      },
+      "explanations": {
+        "a": "Incorrect slicing description.",
+        "b": "Correct! Rows 1–2 and columns 0–1 are selected (stop index is exclusive).",
+        "c": "This is not represented by the given slice.",
+        "d": "This syntax does not select only the last row."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    }
+  ]
+}

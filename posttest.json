@@ -1,0 +1,112 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "Why is NumPy faster than Python lists?",
+      "answers": {
+        "a": "Because it stores data in contiguous memory and supports vectorized operations",
+        "b": "Because it uses built-in loops",
+        "c": "Because it stores strings efficiently",
+        "d": "Because it runs on a GPU by default"
+      },
+      "explanations": {
+        "a": "Correct! Contiguous memory and vectorization make NumPy significantly faster.",
+        "b": "NumPy avoids Python loops, which is why it's faster.",
+        "c": "NumPy arrays cannot efficiently handle mixed types like strings.",
+        "d": "NumPy does not automatically use GPU."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+
+    {
+      "question": "Which statement correctly describes Python Lists compared to NumPy arrays?",
+      "answers": {
+        "a": "Python lists are faster for numerical operations",
+        "b": "Python lists store data in contiguous memory",
+        "c": "Python lists are more flexible but slower for numerical tasks",
+        "d": "Python lists support vectorized mathematical operations"
+      },
+      "explanations": {
+        "a": "NumPy is faster, not Python lists.",
+        "b": "Only NumPy arrays use contiguous memory.",
+        "c": "Correct! Python lists can store mixed data but are slower.",
+        "d": "Vectorized operations are a NumPy feature, not Python lists."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+
+    {
+      "question": "Which NumPy feature allows you to avoid writing explicit Python loops for calculations?",
+      "answers": {
+        "a": "Nested lists",
+        "b": "Vectorized operations",
+        "c": "DataFrames",
+        "d": "Manual indexing"
+      },
+      "explanations": {
+        "a": "Nested lists are a Python structure, not a NumPy optimization.",
+        "b": "Correct! Vectorization allows operations without loops.",
+        "c": "DataFrames belong to pandas, not NumPy.",
+        "d": "Manual indexing does not improve performance."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+
+    {
+      "question": "Which slicing expression retrieves the last element of a NumPy array?",
+      "answers": {
+        "a": "arr[last]",
+        "b": "arr[-1]",
+        "c": "arr[::1]",
+        "d": "arr[1:]"
+      },
+      "explanations": {
+        "a": "`last` is not valid syntax in Python indexing.",
+        "b": "Correct! `-1` accesses the last element using negative indexing.",
+        "c": "This returns the full array, not the last element.",
+        "d": "This returns all elements from index 1 onward."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+
+    {
+      "question": "What does the slicing expression `arr[:, 1]` return in a 2D NumPy array?",
+      "answers": {
+        "a": "All rows from column index 1",
+        "b": "Rows 1 onward for all columns",
+        "c": "Only element at row 1, column 1",
+        "d": "A copy of the entire array"
+      },
+      "explanations": {
+        "a": "Correct! `:` selects all rows and `1` selects column index 1.",
+        "b": "This refers to 1: in rows, not columns.",
+        "c": "`arr[:, 1]` selects a full column, not a single element.",
+        "d": "This does not return the entire array."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+
+    {
+      "question": "What is the purpose of `np.nditer()`?",
+      "answers": {
+        "a": "To efficiently iterate over multi-dimensional arrays",
+        "b": "To slice arrays",
+        "c": "To create new arrays",
+        "d": "To convert arrays to lists"
+      },
+      "explanations": {
+        "a": "Correct! np.nditer() is designed for efficient iteration.",
+        "b": "Slicing uses bracket notation, not nditer.",
+        "c": "Array creation uses functions like np.array(), np.arange(), etc.",
+        "d": "arr.tolist() is used for conversion to lists."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    }
+  ]
+}
